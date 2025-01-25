@@ -4,7 +4,7 @@
 
 \*~Use Local Storage to keep the screen mode consistant accross all pages~
 
-\*Landscape Layout
+\*~Landscape Layout~
 
 \*Add interactive Calendar
 
