@@ -32,9 +32,12 @@
 
     <!-- SLIDE IN MENU -->
     <div class="side-menu">
-        <a href="#" class="menu-item">👤 <span>Profile</span></a>
+        <a href="#" class="menu-item"><span>Profile</span></a>
+        <a href="#" class="menu-item"><span>Settings</span></a>
+        <a href="#" class="menu-item"><span>Support</span></a>
+        <!-- <a href="#" class="menu-item">👤 <span>Profile</span></a>
         <a href="#" class="menu-item">⚙️ <span>Settings</span></a>
-        <a href="#" class="menu-item">📱 <span>Tech Support</span></a>
+        <a href="#" class="menu-item">📱 <span>Tech Support</span></a> -->
     </div>
 
     <!-- Overlay -->
@@ -53,6 +56,43 @@
             <!-- App State -->
             <p class="app_state">Login</p>
         </header>
+
+        <!-- The Form (put a border around this) -->
+        <form>
+
+            <!-- Name -->
+            <div class="input_div">
+                <label for="name">Name:</label>
+                <!-- The Dropdown (put a border around this) -->
+                <select>
+                    <option value="#">Select:</option>
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                    <option value="Three">Three</option>
+                </select>
+            </div>
+
+            <!-- Pin Code -->
+            <div class="input_div">
+                <label for="pin_num">Pin:</label>
+                <!-- The Pin Inputs (Flex these) -->
+                <div class="pin_num_div">
+                    <input type="password">
+                    <input type="password">
+                    <input type="password">
+                    <input type="password">
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+             <button>Submit</button>
+
+             <!-- Create an account Button -->
+             <div class="create_acct_div">
+                <a href="#" class="create_acct">Create an account</a>
+             </div>
+
+        </form>
     </main>
 
 
