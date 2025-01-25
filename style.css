@@ -164,6 +164,17 @@ body {
     transition: opacity 0.3s ease;
 }
 
+/* #day_puck {
+    height: 5em;
+    width: 5em;
+}
+
+#nite_puck {
+    height: 5em;
+    width: 5em;
+} */
+
+
 /* Order for the Dark Lite Mode Logos */
 body.dark-mode .day-nite:nth-child(2) {
     opacity: 0;
@@ -368,6 +379,13 @@ button {
     font-size: .7rem;
     /* background-color: blue; */
     text-align: center;
+}
+
+/* Do a create account for Desktop */
+@media screen and (min-width: 1200px) {
+    .create_acct {
+        font-size: 1rem;
+    }
 }
 
 footer {
