@@ -232,4 +232,43 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1em;
+}
+
+/* HEADER DIV */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+    margin-top: 1.5em;
+}
+
+/* LOGO NAME */
+.logo_name {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    /* background-color: blue; */
+    margin-bottom: -2em;
+}
+
+/* HEADER TEXT */
+header h1 {
+    font-size: 2.3rem;
+}
+
+/* HEADER LOGO */
+.hazel_park_logo {
+    width: 4em;
+    height: 4em;
+}
+
+/* APP STATE */
+.app_state {
+    background-color: var(--app-state-background);
+    border: 2px solid var(--app-state-trim);
+    color: var(--text-color);
+    padding: .3em 4em;
+    border-radius: 5px;
 }
