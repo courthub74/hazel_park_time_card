@@ -173,6 +173,58 @@ body:not(.dark-mode) .day-nite:nth-child(1) {
     opacity: 0;
 }
 
+/* Slide-out Menu Styles */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--menu-background);
+    transition: transform 0.3s ease-in-out;
+    padding-top: 120px;
+    z-index: 999;
+}
+
+.side-menu.active {
+    transform: translateX(300px);
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 998;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-item {
+    padding: 1rem 2rem;
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.menu-item:hover {
+    background-color: var(--menu-hover);
+}
+
+/* For demonstrating menu items */
+.menu-item span {
+    margin-left: 10px;
+}
+
 /* ************** */
 /* Main Container */
 /* ************** */
