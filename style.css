@@ -1,12 +1,183 @@
 /* Import Poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noticia+Text&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:wght@500;700;900&family=Satisfy&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap');
 
+:root {
 
+    /* Base */
+    --background-color: #ffffff;
+    --text-color: #000000;
+
+    /* Menu Colors */
+    --menu-background: #f5f5f5;
+    --menu-hover: #e0e0e0;
+    --menu-shadow: rgba(0, 0, 0, 0.1);
+
+     /* App State Colors */
+     --app-state-background: #74AEDC;
+     --app-state-trim: #000000;
+
+     /* Form Colors */
+     --form-background: #74AEDC;
+     --form-trim: #000000;
+
+     /* Input Colors */
+     --input-background: #D9D9D9;
+     --input-trim: #000000; 
+
+     /* Button Colors */
+     --button-background: #000000;
+     --button-text: white;
+}
+
+/* DARK MODE */
+
+body.dark-mode {
+
+    /* Base */
+    --background-color: black;
+    --text-color: #ffffff;
+
+    /* Menu Colors */
+    --menu-background: #101010;
+    --menu-hover: #0d0d0d;
+    --menu-shadow: rgb(22, 33, 38);
+
+     /* App State Colors */
+     --app-state-background: #000000;
+     --app-state-trim: #74AEDC;
+
+     /* Form Colors */
+     --form-background: #000000;
+     --form-trim: #74AEDC;
+
+     /* Input Colors */
+     --input-background: #000000;
+     --input-trim: #74AEDC;
+     
+     /* Button Colors */
+     --button-background: #74AEDC;
+     --button-text: white;
+}
+
+/* WHOLE BODY */
+
+/* Body for All */
 body {
-    background-color: black;
-    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    font-family: 'Poppins';
+    /* background-color: blue; */
+}
+
+/* Navbar */
+.main_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--background-color);
+
+    /* Puts Box shadow on the bottom */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px var(--menu-shadow);
+    position: relative;
+    z-index: 1000;
+}
+
+/* Menu Burger */
+
+/* Menu Button */
+#menu_burgers {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* background-color: blue; */
+}
+
+/* The Burgers */
+.burger {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Order for the Menu button logos */
+
+/* Make the dark mode menu go away */
+.menu_button #menu_burgers .burger:last-child {
+    display: none;
+}
+
+/* Make the lite mode menu come on in dark mode */
+.dark-mode .menu_button #menu_burgers .burger:last-child {
+    display: block;
+}
+
+/* When Burger button (or burger class) is active */
+.burger.active {
+    transform: rotate(90deg);
+}
+
+/* Day/Nite */
+
+/* Div */
+.theme_switch {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Button */
+#theme_switch {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+/* Stacked Logos */
+.day-nite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+/* Order for the Dark Lite Mode Logos */
+body.dark-mode .day-nite:nth-child(2) {
+    opacity: 0;
+}
+
+body:not(.dark-mode) .day-nite:nth-child(1) {
+    opacity: 0;
+}
+
+/* ************** */
+/* Main Container */
+/* ************** */
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
