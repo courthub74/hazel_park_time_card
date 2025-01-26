@@ -164,15 +164,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* #day_puck {
-    height: 5em;
-    width: 5em;
-}
-
-#nite_puck {
-    height: 5em;
-    width: 5em;
-} */
 
 
 /* Order for the Dark Lite Mode Logos */
@@ -299,6 +290,21 @@ form {
     width: 35%;
 }
 
+.direct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    /* background-color: blue; */
+}
+
+.direct p {
+    font-weight: bold;
+    margin-top: -2em;
+    /* font-size: .9rem; */
+    text-align: center;
+}
+
 label {
     font-size: 1rem;
 }
@@ -381,6 +387,13 @@ button {
     text-align: center;
 }
 
+/* BACK LINK */
+.back_link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
 /* Do a create account for Desktop */
 @media screen and (min-width: 1200px) {
     .create_acct {
@@ -399,4 +412,21 @@ footer {
     width: 3em;
     height: 3em;
     /* margin-top: 5em; */
+}
+
+
+/* Registration Page */
+.registration_input_div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.registration_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.name_input {
+    width: 17em;
 }

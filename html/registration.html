@@ -6,7 +6,7 @@
     <title>Time Card</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
@@ -15,8 +15,8 @@
         <!-- Burger -->
         <div class="menu_button">
             <button id="menu_burgers">
-                <img src="./img/hamburgers/hamburger-black.png" class="burger" id="burger_one" alt="menu">
-                <img src="./img/hamburgers/hamburger-white.png" class="burger" id="burger_two" alt="menu">
+                <img src="../img/hamburgers/hamburger-black.png" class="burger" id="burger_one" alt="menu">
+                <img src="../img/hamburgers/hamburger-white.png" class="burger" id="burger_two" alt="menu">
             </button>
         </div>
         
@@ -24,8 +24,8 @@
         <div class="theme_switch">
             <!-- Day/Nite -->
             <button id="theme_switch">
-                <img src="./img/day-nite/litemode_circle.png" alt="light mode" id="day_puck" class="day-nite">
-                <img src="./img/day-nite/darkmode_circle.png" alt="dark mode" id="nite_puck" class="day-nite">
+                <img src="../img/day-nite/litemode_circle.png" alt="light mode" id="day_puck" class="day-nite">
+                <img src="../img/day-nite/darkmode_circle.png" alt="dark mode" id="nite_puck" class="day-nite">
             </button>
         </div>
     </nav>
@@ -51,25 +51,32 @@
         <header>
             <div class="logo_name">
                 <h1>Time Card</h1>
-                <img class="hazel_park_logo" src="./img/hazel-park-logo/Logo.png">
+                <img class="hazel_park_logo" src="../img/hazel-park-logo/Logo.png">
             </div>
             <!-- App State -->
-            <p class="app_state">Login</p>
+            <p class="app_state">Registration</p>
         </header>
 
         <!-- The Form (put a border around this) -->
         <form>
 
+           <div class="direct">
+                <p>Enter account information</p>
+           </div>
+
             <!-- Name -->
-            <div class="input_div">
-                <label for="name">Name:</label>
-                <!-- The Dropdown (put a border around this) -->
-                <select>
-                    <option value="#">Select:</option>
-                    <option value="One">One</option>
-                    <option value="Two">Two</option>
-                    <option value="Three">Three</option>
-                </select>
+            <div class="registration_input_div">
+                <div class="registration_name">
+                    <!-- First Name -->
+                    <label for="name">Firstname:</label>
+                    <input class="name_input" type="text" id="firstname">
+                </div>
+
+                <div class="registration_name">
+                    <!-- Last Name -->
+                    <label for="name">Lastname:</label>
+                    <input class="name_input" type="text" id="lastname">
+                </div>
             </div>
 
             <!-- Pin Code -->
@@ -84,13 +91,23 @@
                 </div>
             </div>
 
+            <!-- Confirm Pin -->
+            <div class="input_div">
+                <label for="pin_num">Confirm Pin:</label>
+                <!-- The Pin Inputs (Flex these) -->
+                <div class="pin_num_div">
+                    <input type="password">
+                    <input type="password">
+                    <input type="password">
+                    <input type="password">
+                </div>
+            </div>
+
             <!-- Submit Button -->
              <button>Submit</button>
 
-             <!-- Create an account Button -->
-             <div class="create_acct_div">
-                <a href="../html/registration.html" class="create_acct">Create an account</a>
-             </div>
+             <!-- Back Button -->
+             <a class="back_link" href="../index.html">Back</a>
 
         </form>
 
@@ -106,9 +123,9 @@
     <!-- JS -->
 
     <!-- DARKMODE -->
-    <script src="./js/darkmode.js"></script>
+    <script src="../js/darkmode.js"></script>
 
     <!-- SLIDE IN -->
-    <script src="./js/slide-in.js"></script>
+    <script src="../js/slide-in.js"></script>
 </body>
 </html>
