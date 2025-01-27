@@ -370,13 +370,15 @@ input {
 button {
     background-color: var(--button-background);
     color: white;
-    width: 18em;
-    padding: .7em;
+    width: 20em;
+    padding: 1em;
     border: none;
     font-weight: bold;
     margin-top: 1em;
     border-radius: 5px;
     font-family: 'Poppins';
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 /* CREATE AN ACCOUNT */
@@ -389,7 +391,7 @@ button {
 }
 
 .create_acct {
-    font-size: .7rem;
+    font-size: 1rem;
     /* background-color: blue; */
     text-align: center;
 }
@@ -399,6 +401,7 @@ button {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
+    font-size: 1rem;
 }
 
 
@@ -448,6 +451,7 @@ label {
     width: 100%;
     /* width: 23em; */
 }
+
 
 /* Do a create account for Desktop */
 /* This is just for the font size */
