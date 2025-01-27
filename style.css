@@ -287,23 +287,21 @@ form {
     border-radius: 5px;
     gap: 2em;
     padding: 5em;
-    width: 35%;
+    width: 55%;
 }
 
-.direct {
+/* .direct {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20em;
-    /* background-color: blue; */
-}
+} */
 
-.direct p {
+/* .direct p {
     font-weight: bold;
     margin-top: -2em;
-    /* font-size: .9rem; */
     text-align: center;
-}
+} */
 
 label {
     font-size: 1rem;
@@ -319,23 +317,29 @@ label {
 /* DROPDOWN AND PIN NUMBERS DIV*/
 .input_div {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: .5em;
-    /* width: 100%; */
+    width: 20em;
 }
 
 /* NAME GROP DOWN MENU */
 select {
-    width: 18em;
-    padding: .5em;
+    /* width: 25em; */
+    width: 100%;
+    box-sizing: border-box; /* ensures padding is included in element's total width */
+    appearance: none; /* removes default browser styling */
+    -webkit-appearance: none; /* for Safari */
+    -moz-appearance: none; /* for Firefox */
     background-color: var(--input-background);
     border: 2px solid var(--input-trim);
     border-radius: 5px;
     color: var(--text-color);
  
     /* Mobile-friendly sizing */
-    height: 44px; /* Minimum touch target size */
-    padding: 10px 20px;
+    height: 55px; /* Minimum touch target size */
+    /* padding: 10px 20px; */
  }
  
  select option {
@@ -346,13 +350,16 @@ select {
 
  .pin_num_div {
     display: flex;
-    gap: .8em;
+    justify-content: center;
+    align-items: center;
+    gap: .9em;
+    /* width: 25em; */
 }
 
 /* EACH PIN NUMBER */
 input {
-    width: 3em;
-    height: 3em;
+    width: 4.5em;
+    height: 3.8em;
     background-color: var(--input-background);
     border: 2px solid var(--input-trim);
     border-radius: 5px;
@@ -394,12 +401,6 @@ button {
     font-weight: bold;
 }
 
-/* Do a create account for Desktop */
-@media screen and (min-width: 1200px) {
-    .create_acct {
-        font-size: 1rem;
-    }
-}
 
 footer {
     display: flex;
@@ -418,15 +419,47 @@ footer {
 /* Registration Page */
 .registration_input_div {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 1em;
+    width: 100%;
 }
 
+/* So,  you set the width of the parent div
+   and then the children to 100% of the parent
+   and set justify content to left  */
 .registration_name {
     display: flex;
+    justify-content: left;
+    align-items: center;
     flex-direction: column;
+    /* width: 100%; */
+    width: 20em;
+    
+}
+
+label {
+    /* background-color: blue; */
+    width: 100%;
 }
 
 .name_input {
-    width: 17em;
+    width: 100%;
+    /* width: 23em; */
 }
+
+/* Do a create account for Desktop */
+/* This is just for the font size */
+/* @media screen and (min-width: 1200px) {
+    .create_acct {
+        font-size: 1rem;
+    }
+    form {
+        width: 40%;
+    }
+   
+    .name_input {
+        width: 50%;
+    }
+} */
