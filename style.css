@@ -69,12 +69,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     overflow-x: hidden;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
     font-family: 'Poppins';
-    /* background-color: blue; */
 }
 
 /* Navbar */
@@ -276,194 +271,39 @@ header h1 {
     border-radius: 5px;
 }
 
-/* THE FORM */
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--app-state-background);
-    border: 2px solid var(--app-state-trim);
-    border-radius: 5px;
     gap: 2em;
-    padding: 5em;
-    width: 55%;
+    border: 2px solid var(--form-trim);
+    width: 90%;
+    max-width: 100em;
 }
 
-/* .direct {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20em;
-} */
-
-/* .direct p {
-    font-weight: bold;
-    margin-top: -2em;
-    text-align: center;
-} */
-
-label {
-    font-size: 1rem;
-}
-
-.create_acct {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: bold;
-}
-
-
-/* DROPDOWN AND PIN NUMBERS DIV*/
+/* Input container styling */
 .input_div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: .5em;
-    width: 20em;
+    margin-bottom: 1.5rem;
 }
 
-/* NAME GROP DOWN MENU */
-select {
-    /* width: 25em; */
-    width: 100%;
-    box-sizing: border-box; /* ensures padding is included in element's total width */
-    appearance: none; /* removes default browser styling */
-    -webkit-appearance: none; /* for Safari */
-    -moz-appearance: none; /* for Firefox */
-    background-color: var(--input-background);
-    border: 2px solid var(--input-trim);
-    border-radius: 5px;
-    color: var(--text-color);
- 
-    /* Mobile-friendly sizing */
-    height: 55px; /* Minimum touch target size */
-    /* padding: 10px 20px; */
- }
- 
- select option {
-     color: var(--text-color);
-     border: 1px solid var(--input-trim);
-     background-color: var(--input-background);
- }
-
- .pin_num_div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .9em;
-    /* width: 25em; */
-}
-
-/* EACH PIN NUMBER */
-input {
-    width: 4.5em;
-    height: 3.8em;
-    background-color: var(--input-background);
-    border: 2px solid var(--input-trim);
-    border-radius: 5px;
-    text-align: center;
-}
-
-/* SUBMIT BUTTON */
-button {
-    background-color: var(--button-background);
-    color: white;
-    width: 20em;
-    padding: 1em;
-    border: none;
-    font-weight: bold;
-    margin-top: 1em;
-    border-radius: 5px;
-    font-family: 'Poppins';
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-/* CREATE AN ACCOUNT */
-.create_acct_div {
-    /* background-color: blue; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.create_acct {
-    font-size: 1rem;
-    /* background-color: blue; */
-    text-align: center;
-}
-
-/* BACK LINK */
-.back_link {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: small;
-}
-
-.courdevelops_logo {
-    width: 3em;
-    height: 3em;
-    /* margin-top: 5em; */
-}
-
-
-/* Registration Page */
-.registration_input_div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
-}
-
-/* So,  you set the width of the parent div
-   and then the children to 100% of the parent
-   and set justify content to left  */
-.registration_name {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: column;
-    /* width: 100%; */
-    width: 20em;
-    
-}
-
+/* Label styling */
 label {
-    /* background-color: blue; */
-    width: 100%;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-color);
 }
 
-.name_input {
+/* Select dropdown styling */
+select {
     width: 100%;
-    /* width: 23em; */
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+    min-width: 20em;
+    max-width: 40em;
 }
-
-
-/* Do a create account for Desktop */
-/* This is just for the font size */
-/* @media screen and (min-width: 1200px) {
-    .create_acct {
-        font-size: 1rem;
-    }
-    form {
-        width: 40%;
-    }
-   
-    .name_input {
-        width: 50%;
-    }
-} */
