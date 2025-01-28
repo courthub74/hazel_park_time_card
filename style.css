@@ -277,9 +277,12 @@ form {
     justify-content: center;
     align-items: center;
     gap: 2em;
+    background-color: var(--form-background);
     border: 2px solid var(--form-trim);
+    border-radius: 5px;
     width: 80%;
     max-width: 100em;
+    padding: 5em 0 5em 0;
 }
 
 /* Input container styling */
@@ -328,4 +331,9 @@ input {
     max-width: 5em;
     box-sizing: border-box;
     padding: .5em;
+}
+
+/* Submit Button */
+.submit {
+    padding: 1em 10em;
 }
