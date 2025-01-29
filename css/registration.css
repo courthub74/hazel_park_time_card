@@ -283,7 +283,7 @@ form {
     border-radius: 5px;
     width: 80%;
     max-width: 100em;
-    padding: 4em 1em 1em 1em;
+    padding: 2em 1em 1em 1em;
 }
 
 /* Input container styling */
@@ -324,6 +324,7 @@ form {
 .pin_num_div {
     display: flex;
     gap: 1em;
+    box-sizing: border-box;
 }
 
 .name_input {
