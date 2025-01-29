@@ -282,7 +282,7 @@ form {
     border-radius: 5px;
     width: 80%;
     max-width: 100em;
-    padding: 5em 0 5em 0;
+    padding: 5em 1em 5em 1em;
 }
 
 /* Input container styling */
@@ -309,12 +309,13 @@ label {
 select {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 2px solid var(--input-trim);
+    border-radius: 5px;
     font-size: 1rem;
-    background-color: #fff;
+    background-color: var(--input-background);
+    color: var(--text-color);
     cursor: pointer;
-    min-width: 20em;
+    min-width: 5em;
     max-width: 40em;
 }
 
@@ -331,9 +332,20 @@ input {
     max-width: 5em;
     box-sizing: border-box;
     padding: .5em;
+    background-color: var(--input-background);
+    border: 2px solid var(--input-trim);
+    border-radius: 5px;
 }
 
 /* Submit Button */
 .submit {
     padding: 1em 10em;
+    background-color: var(--button-background);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
 }
+
+/* Footer */
+
