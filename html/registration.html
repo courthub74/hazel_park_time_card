@@ -6,7 +6,7 @@
     <title>Time Card</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/registration.css">
 </head>
 <body>
 
@@ -60,12 +60,8 @@
         <!-- The Form (put a border around this) -->
         <form>
 
-           <!-- <div class="direct">
-                <p>Enter account information</p>
-           </div> -->
-
             <!-- Name -->
-            <div class="registration_input_div">
+            <div class="registration_name_div">
                 <div class="registration_name">
                     <!-- First Name -->
                     <label for="name">Firstname:</label>
@@ -80,31 +76,33 @@
             </div>
 
             <!-- Pin Code -->
-            <div class="input_div">
-                <label for="pin_num">Pin:</label>
-                <!-- The Pin Inputs (Flex these) -->
-                <div class="pin_num_div">
-                    <input type="password">
-                    <input type="password">
-                    <input type="password">
-                    <input type="password">
-                </div>
+            <div class="registration_input_div">
+                
+                    <label for="pin_num">Pin:</label>
+                    <!-- The Pin Inputs (Flex these) -->
+                    <div class="pin_num_div">
+                        <input class="pin_put" type="password">
+                        <input class="pin_put" type="password">
+                        <input class="pin_put" type="password">
+                        <input class="pin_put" type="password">
+                    </div>
+                
             </div>
 
             <!-- Confirm Pin -->
-            <div class="input_div">
+            <div class="registration_input_div">
                 <label for="pin_num">Confirm Pin:</label>
                 <!-- The Pin Inputs (Flex these) -->
                 <div class="pin_num_div">
-                    <input type="password">
-                    <input type="password">
-                    <input type="password">
-                    <input type="password">
+                    <input class="pin_put" type="password">
+                    <input class="pin_put" type="password">
+                    <input class="pin_put" type="password">
+                    <input class="pin_put" type="password">
                 </div>
             </div>
 
             <!-- Submit Button -->
-             <button>Submit</button>
+             <button class="submit">Submit</button>
 
              <!-- Back Button -->
              <a class="back_link" href="../index.html">Back</a>
