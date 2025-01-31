@@ -272,10 +272,10 @@ header h1 {
 }
 
 form {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     gap: 2em;
     background-color: var(--form-background);
     border: 2px solid var(--form-trim);
