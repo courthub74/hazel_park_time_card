@@ -286,7 +286,7 @@ form {
 }
 
 /* The Inputs div within the form */
-.input_div {
+.form_div {
     width: 100%;
     display: flex;
     flex-direction: column;
