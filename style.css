@@ -347,6 +347,6 @@ select {
 }
 
 /* Footer */
-.footer {
-    font-size: smaller;
+footer p {
+    font-size: x-small;
 }
