@@ -278,6 +278,7 @@ form {
     flex-direction: column;
     gap: 2em;
     max-width: 500px;
+    /* width: 10em; */
     margin: 0 auto;
     border: 2px solid var(--form-trim);
     background-color: var(--form-background);
@@ -308,7 +309,7 @@ select {
     padding: 8px;
     border: 2px solid var(--input-trim);
     background-color: var(--input-background);
-    color: black;
+    color: var(--text-color);
 }
 
 /* Pin Squares container */
@@ -344,4 +345,9 @@ select {
     color: var(--text-color);
     font-weight: bold;
     text-align: center;
+}
+
+/* Footer */
+.footer {
+    font-size: smaller;
 }
