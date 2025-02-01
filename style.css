@@ -59,6 +59,10 @@ body.dark-mode {
      --button-text: white;
 }
 
+* {
+    border-radius: 5px;
+}
+
 /* WHOLE BODY */
 
 /* Body for All */
@@ -368,6 +372,7 @@ select {
     border: none;
     color: white;
     cursor: pointer;
+    font-weight: bold;
 }
 
 /* Create account link */
@@ -376,6 +381,7 @@ select {
     color: var(--text-color);
     font-weight: bold;
     text-align: center;
+    font-size: .9rem;
 }
 
 /* Footer */
@@ -389,6 +395,37 @@ footer p {
         max-width: 1000px;
         padding: 3em 12em 3em 12em;
         /* background-color: aqua; */
+    }
+
+    .form_div {
+        width: 100%;
+    }
+
+    .select_container {
+        width: 100%;
+        /* max-width: 800px; */
+        width: 200px;
+    }
+
+    .responsive_select {
+        width: 100%;
+    }
+
+    .pin_put {
+        width: 50px;
+        height: 50px;
+    }
+
+    .submit {
+        padding: 12px;
+    }
+
+    .create_acct {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: small;
     }
 }
 
@@ -416,5 +453,18 @@ footer p {
 
     .pin_put {
         width: 60px;
+        height: 60px;
+    }
+
+    .submit {
+        padding: 15px;
+    }
+
+    .create_acct {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: small;
     }
 }
