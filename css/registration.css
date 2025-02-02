@@ -300,14 +300,66 @@ form {
     /* background-color: blue; */
 }
 
-/* Inputs div */
-.input_div {
+/* Registration Names div */
+.registration_form_div {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
 }
 
-/* Index page labels */
-.input_div label {
+/* First and Last name divs */
+.registration_name {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Name Inputs */
+.name_input {
+    border: 2px solid var(--input-trim);
+    background-color: var(--input-background);
+    padding: 12px;
+}
+
+/* Pin num div */
+.pin_reg_div {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4em; */
+}
+
+/* Pin Squares container */
+.pin_num_div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
     /* background-color: blue; */
-    width: 100%;
+}
+
+/* Individual pin squares */
+.pin_put {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    border: 2px solid var(--input-trim);
+    background-color: var(--input-background);
+    /* Aspect ratio sets each square as equal */
+    aspect-ratio: 1;
+}
+
+/* Submit Button */
+.submit {
+    padding: 12px;
+    background-color: var(--button-background);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.back_link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: center;
+    font-size: .9rem;
 }

@@ -303,6 +303,7 @@ form {
 /* Inputs div */
 .input_div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
