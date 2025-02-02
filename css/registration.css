@@ -305,6 +305,8 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    /* background-color: blue; */
+    width: 100%;
 }
 
 /* First and Last name divs */
@@ -317,28 +319,29 @@ form {
 .name_input {
     border: 2px solid var(--input-trim);
     background-color: var(--input-background);
-    padding: 12px;
+    padding: 12px 0px;
 }
 
 /* Pin num div */
 .pin_reg_div {
     display: flex;
     flex-direction: column;
-    /* gap: 4em; */
+    width: 100%;
+    /* background-color: blue; */
 }
 
 /* Pin Squares container */
 .pin_num_div {
     display: flex;
     justify-content: space-between;
-    gap: 1px;
+    gap: 10px;
     /* background-color: blue; */
 }
 
 /* Individual pin squares */
 .pin_put {
-    width: 38px;
-    height: 38px;
+    width: 35px;
+    height: 37px;
     text-align: center;
     border: 2px solid var(--input-trim);
     background-color: var(--input-background);
@@ -356,10 +359,56 @@ form {
     font-weight: bold;
 }
 
+/* Back Link */
 .back_link {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
     text-align: center;
     font-size: .9rem;
+}
+
+/* Wider for Landscape and Tablet */
+@media  screen and (min-width: 768px) {
+    form {
+        max-width: 1000px;
+        padding: 3em 20em 1em 20em;
+        /* background-color: aqua; */
+    }
+
+
+    .form_div {
+        width: 100%;
+    }
+
+    /* Registration Name divs*/
+    .registration_form_div {
+        width: 100%;
+        /* width: 200px; */
+    }
+
+    /* Registration Names */
+    .name_input {
+        width: 100%;
+        /* width: 200px; */
+    }
+
+    /* Pin Registration div */
+    .pin_reg_div {
+        /* gap: 1em; */
+        width: 100%;
+    }
+
+    /* Pin numbers div */
+    .pin_num_div {
+        display: flex;
+        gap: 1em;
+        width: 100%;
+    }
+
+    /* Pin fields */
+    .pin_put {
+        width: 50px;
+        height: 50px;
+    }
 }
