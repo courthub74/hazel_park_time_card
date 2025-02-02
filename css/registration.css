@@ -286,7 +286,7 @@ form {
     margin: 0 auto;
     border: 2px solid var(--form-trim);
     background-color: var(--form-background);
-    padding: 3em;
+    padding: 3em 3em 1em 3em;
 }
 
 /* The Inputs div within the form */
@@ -365,7 +365,7 @@ form {
     color: var(--text-color);
     font-weight: bold;
     text-align: center;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 /* Wider for Landscape and Tablet */
