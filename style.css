@@ -453,7 +453,8 @@ footer p {
 
     .pin_put {
         width: 60px;
-        height: 60px;
+        /* height: 50px; */
+        aspect-ratio: 1;
     }
 
     .submit {
