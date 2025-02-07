@@ -50,51 +50,33 @@
         <!-- HEADER -->
         <header>
             <div class="logo_name">
-                <h1>Time Card</h1>
+                <p>Time Card</p>
                 <img class="hazel_park_logo" src="./img/hazel-park-logo/Logo.png">
             </div>
-            <!-- App State -->
-            <p class="app_state">Login</p>
         </header>
 
-        <!-- The Form (put a border around this) -->
-        <form>
+        <!-- FORM -->
+         <form>
 
-            <!-- Name -->
-            <div class="form_div">
-
-                <!-- Name Select Div -->
-                <div class="input_div">
-                    <label for="name">Name:</label>
-                    <!-- The Dropdown (put a border around this) -->
-                    <div class="select_container">
-                        <select class="responsive_select">
-                            <option value="#">Select:</option>
-                            <option value="One">One</option>
-                            <option value="Two">Two</option>
-                            <option value="Three">Three</option>
-                        </select>
-                    </div>
-                </div>
-            
-                <div class="input_div">
-                     <!-- Pin Num -->
-                    <label for="pin_num">Pin:</label>
-                    <!-- The Pin Inputs (Flex these) -->
-                    <div class="pin_num_div">
-                        <input class="pin_put" type="password">
-                        <input class="pin_put" type="password">
-                        <input class="pin_put" type="password">
-                        <input class="pin_put" type="password">
-                    </div>
-                </div>
-                <!-- Submit Button -->
-                <button class="submit">Submit</button>
-
-                <a href="./html/registration.html" class="create_acct">Create an account</a>
+            <div class="app_state">
+                <p>Login:</p>
             </div>
 
-        </form>
+            <!-- Select Dropdown -->
+            <div class="users_drop_container">
+                <select name="users" id="users_dropdown">
+                    <option value="#">Select Your Name:</option>
+                    <option value="#"></option> 
+                    <option value="#"></option> 
+                    <option value="#"></option> 
+                    <option value="#"></option> 
+                </select>
+            </div>
+
+
+         </form>
+
+        
 
         <footer>
             <p>&copy; <span id="currentYear"></span> Courdevelops. All Rights Reserved</p>

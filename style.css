@@ -5,27 +5,20 @@
 
     /* Base */
     --background-color: #ffffff;
+
+    /* Text */
     --text-color: #000000;
 
     /* Menu Colors */
-    --menu-background: #f5f5f5;
+    --menu-background: #B0CCE2;
     --menu-hover: #e0e0e0;
     --menu-shadow: rgba(0, 0, 0, 0.1);
 
-     /* App State Colors */
-     --app-state-background: #74AEDC;
-     --app-state-trim: #000000;
-
-     /* Form Colors */
-     --form-background: #74AEDC;
-     --form-trim: #000000;
-
      /* Input Colors */
-     --input-background: #D9D9D9;
-     --input-trim: #000000; 
+     --input-background: #B0CCE2;
 
      /* Button Colors */
-     --button-background: #000000;
+     --button-background: #009DF8;
      --button-text: white;
 }
 
@@ -35,6 +28,8 @@ body.dark-mode {
 
     /* Base */
     --background-color: black;
+
+    /* Text */
     --text-color: #ffffff;
 
     /* Menu Colors */
@@ -42,20 +37,11 @@ body.dark-mode {
     --menu-hover: #0d0d0d;
     --menu-shadow: rgb(22, 33, 38);
 
-     /* App State Colors */
-     --app-state-background: #000000;
-     --app-state-trim: #74AEDC;
-
-     /* Form Colors */
-     --form-background: #000000;
-     --form-trim: #74AEDC;
-
      /* Input Colors */
-     --input-background: #000000;
-     --input-trim: #74AEDC;
+     --input-background: #101316;
      
      /* Button Colors */
-     --button-background: #74AEDC;
+     --button-background: #009DF8;
      --button-text: white;
 }
 
@@ -235,267 +221,55 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    /* border: 1px solid lightblue; */
+    height: 100vh;
+    padding: 0 2em 0 2em;
 }
 
-/* HEADER DIV */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: red; */
-    margin-top: 1.5em;
+    /* background-color: blue; */
+    width: 100%;
 }
 
-/* LOGO NAME */
 .logo_name {
     display: flex;
+    justify-content: left;
     align-items: center;
     gap: .5em;
-    /* background-color: blue; */
-    margin-bottom: -2em;
 }
 
-/* HEADER TEXT */
-header h1 {
+.logo_name p {
     font-size: 2.3rem;
+    font-weight: bold;
 }
 
-/* HEADER LOGO */
+
 .hazel_park_logo {
-    width: 4em;
-    height: 4em;
+    width: 2.5em;
+    height: 2.5em;
 }
 
-/* APP STATE */
-.app_state {
-    background-color: var(--app-state-background);
-    border: 2px solid var(--app-state-trim);
-    color: var(--text-color);
-    padding: .3em 4em;
-    border-radius: 5px;
-}
-
-
-/* Form set with a max width */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    max-width: 500px;
-    /* width: 10em; */
-    margin: 0 auto;
-    border: 2px solid var(--form-trim);
-    background-color: var(--form-background);
-    padding: 3em;
-}
-
-/* The Inputs div within the form */
-.form_div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    gap: 3em;
-    /* background-color: blue; */
-}
-
-/* Inputs div */
-.input_div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Index page labels */
-.input_div label {
-    /* background-color: blue; */
     width: 100%;
 }
 
-/* Make all elements the same width */
-select,
-.pin_put,
-.submit {
-    width: 100%;
-    box-sizing: border-box;
+.app_state {
+    opacity: 50%;
 }
 
-/* SELECT */
-
-/* Select Container */
-.select_container {
+/* Users select Drop */
+.users_drop_container {
+    /* border: 1px solid blue; */
     width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    /* padding: 10px; */
-    /* border: 2px dotted red; */
+
 }
-
-/* Select Button */
-.responsive_select {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid var(--input-trim);
-    border-radius: 4px;
+#users_dropdown {
     background-color: var(--input-background);
-    color: var(--text-color);
-    font-size: 16px;
-    appearance: none;
-    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    background-size: 12px;
-}
-
-/* Dark mode version */
-.dark-mode .responsive_select {
-    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
-}
-/* Select details */
-select {
-    padding: 8px;
-    border: 2px solid var(--input-trim);
-    background-color: var(--input-background);
-    color: var(--text-color);
-}
-
-/* Pin Squares container */
-.pin_num_div {
-    display: flex;
-    justify-content: space-between;
-    gap: .3em;
-    gap: 5px;
-}
-
-/* Individual pin squares */
-.pin_put {
-    width: 40px;
-    height: 43px;
-    text-align: center;
-    border: 2px solid var(--input-trim);
-    background-color: var(--input-background);
-    /* Aspect ratio sets each square as equal */
-    aspect-ratio: 1;
-}
-
-/* Submit Button */
-.submit {
-    padding: 12px;
-    background-color: var(--button-background);
     border: none;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-/* Create account link */
-.create_acct {
-    text-decoration: none;
+    width: 100%;
+    padding: 1em;
     color: var(--text-color);
-    font-weight: bold;
-    text-align: center;
-    font-size: .9rem;
 }
-
-/* Footer */
-footer p {
-    font-size: x-small;
+footer {
+    font-size: smaller;
 }
-
-/* Wider for Landscape and Tablet */
-@media  screen and (min-width: 768px) {
-    form {
-        max-width: 1000px;
-        padding: 3em 12em 3em 12em;
-        /* background-color: aqua; */
-    }
-
-
-    .form_div {
-        width: 100%;
-    }
-
-    /* .input_div {
-        gap: 1em;
-    } */
-
-    .select_container {
-        width: 100%;
-        /* max-width: 800px; */
-        width: 200px;
-    }
-
-    .responsive_select {
-        width: 100%;
-    }
-
-    /* Pin number div */
-    .pin_num_div {
-        gap: 1em;
-        width: 100%;
-    }
-
-    /* Each pin number */
-    .pin_put {
-        width: 50px;
-        height: 50px;
-    }
-
-    .submit {
-        padding: 12px;
-    }
-
-    .create_acct {
-        font-size: 1rem;
-    }
-
-    footer p {
-        font-size: small;
-    }
-}
-
-/* Wider for Desktop */
-@media screen and (min-width: 1024px) {
-    form {
-        max-width: 1000px;
-        padding: 3em 20em 3em 20em;
-        /* background-color: blue; */
-    }
-
-    .form_div {
-        width: 100%;
-    }
-
-    .select_container {
-        width: 100%;
-        /* max-width: 800px; */
-        width: 300px;
-    }
-
-    .responsive_select {
-        width: 100%;
-    }
-
-    .pin_put {
-        width: 60px;
-        /* height: 50px; */
-        aspect-ratio: 1;
-    }
-
-    .submit {
-        padding: 15px;
-    }
-
-    .create_acct {
-        font-size: 1rem;
-    }
-
-    footer p {
-        font-size: small;
-    }
-}
-
-
-
-
