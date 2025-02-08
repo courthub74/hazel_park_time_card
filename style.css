@@ -291,6 +291,7 @@ form {
 .pin_number {
     display: flex;
     flex-direction: column;
+    gap: .5em;
 }
 
 label {
@@ -309,6 +310,14 @@ label {
     height: 4em;
 }
 
+#reset_button {
+    background: none;
+    color: var(--menu-text-color);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: .9rem;
+}
 
 footer {
     font-size: smaller;
