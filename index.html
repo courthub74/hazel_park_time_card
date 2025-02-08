@@ -64,14 +64,29 @@
 
             <!-- Select Dropdown -->
             <div class="users_drop_container">
+                
                 <select name="users" id="users_dropdown">
-                    <option value="#">Select Your Name:</option>
-                    <option value="#"></option> 
-                    <option value="#"></option> 
-                    <option value="#"></option> 
-                    <option value="#"></option> 
+                    <option value="#" class="drop_label">Select Your Name:</option>
+                    <option value="#">One</option> 
+                    <option value="#">Two</option> 
+                    <option value="#">Three</option> 
+                    <option value="#">Four</option> 
                 </select>
             </div>
+
+            <!-- Pin Number -->
+            <!-- Pin # -->
+            <div class="pin_number">
+                <label for="pin_num">Pin #:</label>
+                    <div class="pin_field" id="pin_field">
+                        <input type="password" class="pin_put" maxlength="1">
+                        <input type="password" class="pin_put" maxlength="1">
+                        <input type="password" class="pin_put" maxlength="1">
+                        <input type="password" class="pin_put" maxlength="1">
+                    </div>
+                    <!-- Reset Pins Button -->
+                     <button class="reset_button" id="reset_button">Reset</button>
+              </div>
 
 
          </form>

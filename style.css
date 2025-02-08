@@ -9,6 +9,9 @@
     /* Text */
     --text-color: #000000;
 
+    /* Menu Text */
+    --menu-text-color: #00000080; /* 50% opacity */
+
     /* Menu Colors */
     --menu-background: #B0CCE2;
     --menu-hover: #e0e0e0;
@@ -31,6 +34,9 @@ body.dark-mode {
 
     /* Text */
     --text-color: #ffffff;
+
+     /* Menu Text */
+     --menu-text-color: #ffffff45; /* 50% opacity */
 
     /* Menu Colors */
     --menu-background: #101010;
@@ -251,6 +257,9 @@ header {
 
 form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
 
 .app_state {
@@ -258,18 +267,50 @@ form {
 }
 
 /* Users select Drop */
+/* ***************** */
+/* ***************** */
+
 .users_drop_container {
     /* border: 1px solid blue; */
     width: 100%;
-
+    box-sizing: border-box;
 }
+
 #users_dropdown {
     background-color: var(--input-background);
+    color: var(--menu-text-color);
     border: none;
     width: 100%;
     padding: 1em;
-    color: var(--text-color);
 }
+
+/* Pin Number Login */
+/* ***************** */
+/* ***************** */
+
+.pin_number {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    opacity: 50%;
+}
+
+.pin_field {
+    display: flex;
+    gap: 1.7em;
+}
+
+.pin_put {
+    background-color: var(--input-background);
+    border: none;
+    width: 4em;
+    height: 4em;
+}
+
+
 footer {
     font-size: smaller;
+    color: var(--menu-text-color);
 }
