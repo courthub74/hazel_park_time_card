@@ -50,23 +50,24 @@
         <!-- HEADER -->
         <header>
             <div class="logo_name">
-                <p>Time Card</p>
-                <img class="hazel_park_logo" src="./img/hazel-park-logo/Logo.png">
+                    <p>Time Card</p>
+                    <img class="hazel_park_logo" src="./img/hazel-park-logo/Logo.png">
+            </div>
+
+             <!-- App State -->
+             <div class="app_state">
+                <p>Login:</p>
             </div>
         </header>
 
         <!-- FORM -->
          <form>
 
-            <div class="app_state">
-                <p>Login:</p>
-            </div>
-
             <!-- Select Dropdown -->
             <div class="users_drop_container">
-                
+                <label for="name_select">Select your Name:</label>
                 <select name="users" id="users_dropdown">
-                    <option value="#" class="drop_label">Select Your Name:</option>
+                    <option value="" selected class="drop_label">-</option>
                     <option value="#">One</option> 
                     <option value="#">Two</option> 
                     <option value="#">Three</option> 
@@ -77,7 +78,7 @@
             <!-- Pin Number -->
             <!-- Pin # -->
             <div class="pin_number">
-                <label for="pin_num">Pin #:</label>
+                <label for="pin_num">Enter your pin #:</label>
                     <div class="pin_field" id="pin_field">
                         <input type="password" class="pin_put" maxlength="1">
                         <input type="password" class="pin_put" maxlength="1">
@@ -86,8 +87,13 @@
                     </div>
                     <!-- Reset Pins Button -->
                      <button class="reset_button" id="reset_button">Reset Pin</button>
-              </div>
+            </div>
 
+            <!-- Submit Button -->
+            <button class="submit" id="submit_login">Submit</button>
+
+             <!-- Create Account -->
+             <a href="../html/registration.html" class="create_acct">Create an Account</a>
 
          </form>
 
