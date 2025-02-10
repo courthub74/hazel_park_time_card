@@ -53,8 +53,43 @@
                 <h1>Time Card</h1>
                 <img class="hazel_park_logo" src="../img/hazel-park-logo/Logo.png">
             </div>
+
+            <!-- App State -->
+            <div class="app_state">
+                <p>Register:</p>
+            </div>
         </header>
 
+        <!-- FORM -->
+        <form>
+
+            <!-- Name Inputs -->
+            <div class="name_inputs">
+                <label>Enter Name:</label>
+                <input class="name_put" placeholder="First Name:" type="text" id="firstname">
+                <input class="name_put" placeholder="Last Name:" type="text" id="lastname">
+            </div>
+
+     
+            <!-- Pin # -->
+            <div class="pin_number">
+                <label for="pin_num">Enter a 4-digit pin #:</label>
+                    <div class="pin_field" id="pin_field">
+                        <input type="password" class="pin_put" maxlength="1">
+                        <input type="password" class="pin_put" maxlength="1">
+                        <input type="password" class="pin_put" maxlength="1">
+                        <input type="password" class="pin_put" maxlength="1">
+                    </div>
+                    <!-- Reset Pins Button -->
+                     <button class="reset_button" id="reset_button">Reset Pin</button>
+            </div>
+
+             <!-- Submit Button -->
+        <button class="submit" id="submit_login">Submit</button>
+
+        <!-- Create Account -->
+        <a href="../index.html" class="create_acct">Back to Login</a>
+        </form>
         
     </main>
 

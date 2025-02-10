@@ -5,27 +5,23 @@
 
     /* Base */
     --background-color: #ffffff;
+
+    /* Text */
     --text-color: #000000;
 
+    /* Menu Text */
+    --menu-text-color: #00000080; /* 50% opacity */
+
     /* Menu Colors */
-    --menu-background: #f5f5f5;
+    --menu-background: #ffffff;
     --menu-hover: #e0e0e0;
     --menu-shadow: rgba(0, 0, 0, 0.1);
 
-     /* App State Colors */
-     --app-state-background: #74AEDC;
-     --app-state-trim: #000000;
-
-     /* Form Colors */
-     --form-background: #74AEDC;
-     --form-trim: #000000;
-
      /* Input Colors */
-     --input-background: #D9D9D9;
-     --input-trim: #000000; 
+     --input-background: #B0CCE2;
 
      /* Button Colors */
-     --button-background: #000000;
+     --button-background: #009DF8;
      --button-text: white;
 }
 
@@ -35,27 +31,23 @@ body.dark-mode {
 
     /* Base */
     --background-color: black;
+
+    /* Text */
     --text-color: #ffffff;
+
+     /* Menu Text */
+     --menu-text-color: #ffffff75; /* 50% opacity */
 
     /* Menu Colors */
     --menu-background: #101010;
     --menu-hover: #0d0d0d;
     --menu-shadow: rgb(22, 33, 38);
 
-     /* App State Colors */
-     --app-state-background: #000000;
-     --app-state-trim: #74AEDC;
-
-     /* Form Colors */
-     --form-background: #000000;
-     --form-trim: #74AEDC;
-
      /* Input Colors */
-     --input-background: #000000;
-     --input-trim: #74AEDC;
+     --input-background: #101316;
      
      /* Button Colors */
-     --button-background: #74AEDC;
+     --button-background: #009DF8;
      --button-text: white;
 }
 
@@ -74,6 +66,10 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 /* Navbar */
@@ -83,7 +79,7 @@ body {
     align-items: center;
     padding: 1rem;
     background-color: var(--background-color);
-
+    width: 92%;
     /* Puts Box shadow on the bottom */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px var(--menu-shadow);
@@ -232,8 +228,141 @@ body:not(.dark-mode) .day-nite:nth-child(1) {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    /* gap: 1em; */
+    gap: .5em;
+    height: 100vh;
+    padding: 0 2em 0 2em;
+    margin-top: 2em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+}
+
+.logo_name {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: left;
+    align-items: center;
+    gap: .5em;
+}
+
+.app_state {
+    opacity: 100%;
+    font-size: 1rem;
+}
+
+.app_state p {
+    text-decoration: underline;
+    text-decoration-color: var(--button-background);
+    text-decoration-thickness: 4px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.logo_name p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hazel_park_logo {
+    width: 3em;
+    height: 3em;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-top: 2em;
+}
+
+/* First Name Input */
+/* **************** */
+/* **************** */
+
+.name_inputs {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     gap: 1em;
 }
 
+.name_put {
+    background-color: var(--input-background);
+    color: var(--menu-text-color);
+    border: none;
+    width: 90%;
+    padding: 1em;
+}
+
+/* Pin Number Login */
+/* ***************** */
+/* ***************** */
+
+.pin_number {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+label {
+    opacity: 100%;
+    font-size: small;
+}
+
+.pin_field {
+    display: flex;
+    gap: 1.7em;
+    gap: 1.1em;
+}
+
+.pin_put {
+    background-color: var(--input-background);
+    border: none;
+    width: 4em;
+    width: 4.5em;
+    height: 4em;
+}
+
+/* Reset Pins Button */
+#reset_button {
+    background: none;
+    color: var(--menu-text-color);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: small;
+}
+
+/* Submit Button */
+.submit {
+    background-color: var(--button-background);
+    color: white;
+    border: none;
+    padding: 1em;
+    font-weight: bold;
+}
+
+/* Create Account Link */
+.create_acct {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+
+footer {
+    font-size: smaller;
+    color: var(--menu-text-color);
+    margin-top: 2em;
+}

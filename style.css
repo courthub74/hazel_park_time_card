@@ -66,6 +66,10 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 /* Navbar */
@@ -75,6 +79,7 @@ body {
     align-items: center;
     padding: 1rem;
     background-color: var(--background-color);
+    width: 92%;
 
     /* Puts Box shadow on the bottom */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -256,7 +261,7 @@ header {
 .app_state p {
     text-decoration: underline;
     text-decoration-color: var(--button-background);
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 4px;
     font-size: medium;
     font-weight: bold;
 }
@@ -336,6 +341,7 @@ label {
     text-align: left;
     cursor: pointer;
     font-size: small;
+    /* font-weight: bold; */
 }
 
 /* Submit Button */
