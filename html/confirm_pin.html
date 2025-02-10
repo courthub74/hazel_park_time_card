@@ -6,7 +6,7 @@
     <title>Time Card</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/registration.css">
 </head>
 <body>
 
@@ -15,8 +15,8 @@
         <!-- Burger -->
         <div class="menu_button">
             <button id="menu_burgers">
-                <img src="./img/hamburgers/hamburger-black.png" class="burger" id="burger_one" alt="menu">
-                <img src="./img/hamburgers/hamburger-white.png" class="burger" id="burger_two" alt="menu">
+                <img src="../img/hamburgers/hamburger-black.png" class="burger" id="burger_one" alt="menu">
+                <img src="../img/hamburgers/hamburger-white.png" class="burger" id="burger_two" alt="menu">
             </button>
         </div>
         
@@ -24,8 +24,8 @@
         <div class="theme_switch">
             <!-- Day/Nite -->
             <button id="theme_switch">
-                <img src="./img/day-nite/litemode_circle.png" alt="light mode" id="day_puck" class="day-nite">
-                <img src="./img/day-nite/darkmode_circle.png" alt="dark mode" id="nite_puck" class="day-nite">
+                <img src="../img/day-nite/litemode_circle.png" alt="light mode" id="day_puck" class="day-nite">
+                <img src="../img/day-nite/darkmode_circle.png" alt="dark mode" id="nite_puck" class="day-nite">
             </button>
         </div>
     </nav>
@@ -50,35 +50,28 @@
         <!-- HEADER -->
         <header>
             <div class="logo_name">
-                    <p>Time Card</p>
-                    <img class="hazel_park_logo" src="./img/hazel-park-logo/Logo.png">
+                <h1>Time Card</h1>
+                <img class="hazel_park_logo" src="../img/hazel-park-logo/Logo.png">
             </div>
 
-             <!-- App State -->
-             <div class="app_state">
-                <p>Login:</p>
+            <!-- App State -->
+            <div class="app_state">
+                <p>Confirm Pin:</p>
             </div>
         </header>
 
         <!-- FORM -->
-         <form>
+        <form>
 
-            <!-- Select Dropdown -->
-            <div class="users_drop_container">
-                <label for="name_select">Select your Name:</label>
-                <select name="users" id="users_dropdown">
-                    <option value="" selected class="drop_label">-</option>
-                    <option value="#">One</option> 
-                    <option value="#">Two</option> 
-                    <option value="#">Three</option> 
-                    <option value="#">Four</option> 
-                </select>
+            <!-- Name Inputs -->
+            <div class="whole_name">
+                <h2>Firstname Lastname</h2>
             </div>
 
-            <!-- Pin Number -->
+     
             <!-- Pin # -->
             <div class="pin_number">
-                <label for="pin_num">Enter your pin #:</label>
+                <label for="pin_num">Confirm 4-digit pin #:</label>
                     <div class="pin_field" id="pin_field">
                         <input type="password" class="pin_put" maxlength="1">
                         <input type="password" class="pin_put" maxlength="1">
@@ -89,31 +82,22 @@
                      <button class="reset_button" id="reset_button">Reset Pin</button>
             </div>
 
-            <!-- Submit Button -->
-            <button class="submit" id="submit_login">Submit</button>
+             <!-- Submit Button -->
+        <button class="submit" id="submit_login">Submit</button>
 
-             <!-- Create Account -->
-             <a href="../html/registration.html" class="create_acct">Create an Account</a>
-
-         </form>
-
+        <!-- Create Account -->
+        <!-- <a href="../index.html" class="create_acct">Back</a> -->
+        </form>
         
-
-        <footer>
-            <p>&copy; <span id="currentYear"></span> Courdevelops. All Rights Reserved</p>
-            <script>
-                document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-            </script>
-          </footer>
     </main>
 
 
     <!-- JS -->
 
     <!-- DARKMODE -->
-    <script src="./js/darkmode.js"></script>
+    <script src="../js/darkmode.js"></script>
 
     <!-- SLIDE IN -->
-    <script src="./js/slide-in.js"></script>
+    <script src="../js/slide-in.js"></script>
 </body>
 </html>
