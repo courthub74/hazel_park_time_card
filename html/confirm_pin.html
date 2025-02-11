@@ -50,28 +50,29 @@
         <!-- HEADER -->
         <header>
             <div class="logo_name">
-                <h1>Time Card</h1>
-                <img class="hazel_park_logo" src="../img/hazel-park-logo/Logo.png">
+                    <p>Time Card</p>
+                    <img class="hazel_park_logo" src="../img/hazel-park-logo/Logo.png">
             </div>
 
-            <!-- App State -->
-            <div class="app_state">
+             <!-- App State -->
+             <div class="app_state">
                 <p>Confirm Pin:</p>
             </div>
         </header>
 
         <!-- FORM -->
-        <form>
+         <form>
 
-            <!-- Name Inputs -->
-            <div class="whole_name">
-                <p>Firstname Lastname</p>
+            <!-- Select Dropdown -->
+            <div class="name_entered">
+                <label>Name:</label>
+                <p class="output">Firstname Lastname</p>
             </div>
 
-     
+            <!-- Pin Number -->
             <!-- Pin # -->
             <div class="pin_number">
-                <label for="pin_num">Confirm 4-digit pin #:</label>
+                <label for="pin_num">Confirm your pin #:</label>
                     <div class="pin_field" id="pin_field">
                         <input type="password" class="pin_put" maxlength="1">
                         <input type="password" class="pin_put" maxlength="1">
@@ -82,13 +83,21 @@
                      <button class="reset_button" id="reset_button">Reset Pin</button>
             </div>
 
-             <!-- Submit Button -->
-        <button class="submit" id="submit_login">Submit</button>
+            <!-- Submit Button -->
+            <button class="submit" id="submit_login">Submit</button>
 
-        <!-- Create Account -->
-        <!-- <a href="../index.html" class="create_acct">Back</a> -->
-        </form>
+             
+
+         </form>
+
         
+
+        <!-- <footer>
+            <p>&copy; <span id="currentYear"></span> Courdevelops. All Rights Reserved</p>
+            <script>
+                document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+            </script>
+          </footer> -->
     </main>
 
 

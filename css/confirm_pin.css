@@ -284,10 +284,15 @@ form {
     margin-top: 2em;
 }
 
-/* Whole Name */
-/* .whole_name p {
+/* Name Entered */
+.name_entered {
+    display: flex;
+    flex-direction: column;
+}
+
+.output {
     font-weight: bold;
-} */
+}
 
 
 /* Pin Number Confirm */
@@ -313,6 +318,8 @@ label {
 
 .pin_put {
     background-color: var(--input-background);
+    color: var(--text-color);
+    text-align: center;
     border: none;
     width: 4em;
     width: 4.5em;

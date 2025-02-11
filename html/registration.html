@@ -50,30 +50,31 @@
         <!-- HEADER -->
         <header>
             <div class="logo_name">
-                <h1>Time Card</h1>
-                <img class="hazel_park_logo" src="../img/hazel-park-logo/Logo.png">
+                    <p>Time Card</p>
+                    <img class="hazel_park_logo" src="../img/hazel-park-logo/Logo.png">
             </div>
 
-            <!-- App State -->
-            <div class="app_state">
+             <!-- App State -->
+             <div class="app_state">
                 <p>Register:</p>
             </div>
         </header>
 
         <!-- FORM -->
-        <form>
+         <form>
 
-            <!-- Name Inputs -->
-            <div class="name_inputs">
-                <label>Enter Name:</label>
-                <input class="name_put" placeholder="First Name:" type="text" id="firstname">
-                <input class="name_put" placeholder="Last Name:" type="text" id="lastname">
+            <!-- Select Dropdown -->
+            <div class="users_drop_container">
+                <label for="name_select">Enter your name:</label>
+                <!-- Name Inputs -->
+                <input class="name_put" type="text" placeholder="First name:" id="firstname">
+                <input class="name_put" type="text" placeholder="First name:" id="lastname">
             </div>
 
-     
+            <!-- Pin Number -->
             <!-- Pin # -->
             <div class="pin_number">
-                <label for="pin_num">Enter a 4-digit pin #:</label>
+                <label for="pin_num">Enter your pin #:</label>
                     <div class="pin_field" id="pin_field">
                         <input type="password" class="pin_put" maxlength="1">
                         <input type="password" class="pin_put" maxlength="1">
@@ -84,13 +85,22 @@
                      <button class="reset_button" id="reset_button">Reset Pin</button>
             </div>
 
-             <!-- Submit Button -->
-        <button class="submit" id="submit_login">Submit</button>
+            <!-- Submit Button -->
+            <button class="submit" id="submit_login">Submit</button>
 
-        <!-- Create Account -->
-        <a href="../index.html" class="create_acct">Back to Login</a>
-        </form>
+             <!-- Create Account -->
+             <!-- <a href="../html/registration.html" class="create_acct">Create an Account</a> -->
+
+         </form>
+
         
+
+        <!-- <footer>
+            <p>&copy; <span id="currentYear"></span> Courdevelops. All Rights Reserved</p>
+            <script>
+                document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+            </script>
+          </footer> -->
     </main>
 
 
