@@ -235,7 +235,7 @@ main {
     gap: .5em;
     height: 100vh;
     padding: 0 2em 0 2em;
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
 header {
@@ -303,6 +303,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: .5em;
+    
 }
 
 label {
@@ -318,6 +319,7 @@ label {
 
 .pin_put {
     background-color: var(--input-background);
+    /* background-color: red; */
     color: var(--text-color);
     text-align: center;
     border: none;
