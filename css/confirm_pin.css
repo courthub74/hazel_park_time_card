@@ -80,12 +80,12 @@ body {
     padding: 1rem;
     background-color: var(--background-color);
     width: 95%;
-
     /* Puts Box shadow on the bottom */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px var(--menu-shadow);
     position: relative;
     z-index: 1000;
+    /* background-color: blue; */
 }
 
 /* Menu Burger */
@@ -231,8 +231,8 @@ main {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    gap: 1em; 
-    /* border: 1px solid lightblue; */
+    /* gap: 1em; */
+    gap: .5em;
     height: 100vh;
     padding: 0 2em 0 2em;
     margin-top: 2em;
@@ -271,7 +271,6 @@ header {
     font-weight: bold;
 }
 
-
 .hazel_park_logo {
     width: 3em;
     height: 3em;
@@ -285,29 +284,13 @@ form {
     margin-top: 2em;
 }
 
+/* Whole Name */
+/* .whole_name p {
+    font-weight: bold;
+} */
 
-/* Users select Drop */
-/* ***************** */
-/* ***************** */
 
-.users_drop_container {
-    /* border: 1px solid blue; */
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
-}
-
-#users_dropdown {
-    background-color: var(--input-background);
-    color: var(--menu-text-color);
-    border: none;
-    width: 100%;
-    padding: 1em;
-}
-
-/* Pin Number Login */
+/* Pin Number Confirm */
 /* ***************** */
 /* ***************** */
 
@@ -344,7 +327,6 @@ label {
     text-align: left;
     cursor: pointer;
     font-size: small;
-    /* font-weight: bold; */
 }
 
 /* Submit Button */

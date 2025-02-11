@@ -79,12 +79,13 @@ body {
     align-items: center;
     padding: 1rem;
     background-color: var(--background-color);
-    width: 92%;
+    width: 95%;
     /* Puts Box shadow on the bottom */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px var(--menu-shadow);
     position: relative;
     z-index: 1000;
+    /* background-color: blue; */
 }
 
 /* Menu Burger */
@@ -349,6 +350,7 @@ label {
     border: none;
     padding: 1em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* Create Account Link */
