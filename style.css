@@ -255,15 +255,15 @@ header {
 
 .app_state {
     opacity: 100%;
-    font-size: 1rem;
+    /* font-size: 2rem; */
 }
 
 .app_state p {
     text-decoration: underline;
     text-decoration-color: var(--button-background);
-    text-decoration-thickness: 4px;
-    font-size: medium;
-    font-weight: bold;
+    text-decoration-thickness: 2px;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
 }
 
 .logo_name p {
