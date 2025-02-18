@@ -76,10 +76,13 @@ body {
 .main_nav {
     display: flex;
     justify-content: space-between;
+    justify-content: center;
+    gap: 17em;
     align-items: center;
     padding: 1rem;
     background-color: var(--background-color);
-    width: 95%;
+    width: 90%;
+    /* width: 100%; */
 
     /* Puts Box shadow on the bottom */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -262,7 +265,8 @@ header {
     text-decoration: underline;
     text-decoration-color: var(--button-background);
     text-decoration-thickness: 2px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-size: small;
     /* font-weight: bold; */
 }
 
