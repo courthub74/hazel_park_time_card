@@ -261,9 +261,9 @@ header {
 .app_state p {
     text-decoration: underline;
     text-decoration-color: var(--button-background);
-    text-decoration-thickness: 4px;
-    font-size: medium;
-    font-weight: bold;
+    text-decoration-thickness: 2px;
+    font-size: small;
+    /* font-weight: bold; */
 }
 
 .logo_name p {

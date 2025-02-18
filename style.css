@@ -76,8 +76,8 @@ body {
 .main_nav {
     display: flex;
     justify-content: space-between;
-    justify-content: center;
-    gap: 17em;
+    /* justify-content: center;
+    gap: 17em; */
     align-items: center;
     padding: 1rem;
     background-color: var(--background-color);
@@ -85,8 +85,8 @@ body {
     /* width: 100%; */
 
     /* Puts Box shadow on the bottom */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 5px var(--menu-shadow);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    /* box-shadow: 0 2px 5px var(--menu-shadow); */
     position: relative;
     z-index: 1000;
 }
@@ -374,7 +374,7 @@ label {
 }
 
 footer {
-    font-size: smaller;
+    font-size: x-small;
     color: var(--menu-text-color);
     margin-top: 2em;
 }
