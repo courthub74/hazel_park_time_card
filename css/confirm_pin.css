@@ -262,7 +262,7 @@ header {
     text-decoration: underline;
     text-decoration-color: var(--button-background);
     text-decoration-thickness: 2px;
-    font-size: small;
+    font-size: medium;
     /* font-weight: bold; */
 }
 

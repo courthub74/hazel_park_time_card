@@ -266,7 +266,7 @@ header {
     text-decoration-color: var(--button-background);
     text-decoration-thickness: 2px;
     font-size: 1.1rem;
-    font-size: small;
+    font-size: medium;
     /* font-weight: bold; */
 }
 
