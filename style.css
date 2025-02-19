@@ -301,6 +301,10 @@ form {
     display: flex;
     flex-direction: column;
     gap: .5em;
+    /* padding: 1em;
+    background-color: var(--input-background);
+    color: var(--menu-text-color);
+    border: none; */
 }
 
 #users_dropdown {
@@ -309,6 +313,10 @@ form {
     border: none;
     width: 100%;
     padding: 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* appearance: none; */
+    /* background-color: #fff; */
 }
 
 /* Pin Number Login */
