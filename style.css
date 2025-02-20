@@ -18,7 +18,11 @@
     --menu-shadow: rgba(0, 0, 0, 0.1);
 
      /* Input Colors */
-     --input-background: #B0CCE2;
+     /* --input-background: #B0CCE2; */
+     /* --input-background: #587790; */
+     /* --input-background: #587790a4; */
+     --input-background: #658cab92;
+
 
      /* Button Colors */
      --button-background: #009DF8;
@@ -86,7 +90,7 @@ body {
 
     /* Puts Box shadow on the bottom */
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-    /* box-shadow: 0 2px 5px var(--menu-shadow); */
+    box-shadow: 0 2px 5px var(--menu-shadow);
     position: relative;
     z-index: 1000;
 }

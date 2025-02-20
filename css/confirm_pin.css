@@ -18,7 +18,9 @@
     --menu-shadow: rgba(0, 0, 0, 0.1);
 
      /* Input Colors */
-     --input-background: #B0CCE2;
+     /* --input-background: #B0CCE2; */
+     --input-background: #658cab92;
+
 
      /* Button Colors */
      --button-background: #009DF8;

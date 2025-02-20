@@ -18,7 +18,8 @@
     --menu-shadow: rgba(0, 0, 0, 0.1);
 
      /* Input Colors */
-     --input-background: #B0CCE2;
+     /* --input-background: #B0CCE2; */
+     --input-background: #587790a4;
 
      /* Button Colors */
      --button-background: #009DF8;
@@ -304,6 +305,13 @@ form {
     border: none;
     padding: 2em;
     cursor: pointer;
+    border-radius: 0;
+}
+
+/* Button Text */
+.acct_type_header {
+    color: #002F54;
+    font-size: .7rem;
 }
 
 /* Each Button ID */
