@@ -6,7 +6,7 @@
     <title>Time Card</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/registration.css">
+    <link rel="stylesheet" href="../css/pin_number.css">
 </head>
 <body>
 
@@ -63,18 +63,33 @@
                 </div>
             </header>
 
-            <label>Let's start with your Name:</label>
 
             <!-- Select Dropdown -->
-            <div class="registration_names">
-                <!-- <label>First Name:</label> -->
-                <input type="text" id="firstname" placeholder="First Name:">
+            <div class="pin_number">
+                <label for="pin_num">Enter your 4-digit pin #:</label>
+                <div class="pin_field" id="pin_field">
+                    <input type="password" class="pin_put" maxlength="1">
+                    <input type="password" class="pin_put" maxlength="1">
+                    <input type="password" class="pin_put" maxlength="1">
+                    <input type="password" class="pin_put" maxlength="1">
+                </div>
             </div>
 
-            <div class="registration_names">
-                <!-- <label>Last Name:</label> -->
-                <input type="text" id="lastname" placeholder="Last Name:">
+             <!-- Pin # -->
+             <div class="pin_number">
+                <label for="pin_num">Confirm your 4-digit pin #:</label>
+                <div class="pin_field" id="pin_field">
+                    <input type="password" class="pin_put" maxlength="1">
+                    <input type="password" class="pin_put" maxlength="1">
+                    <input type="password" class="pin_put" maxlength="1">
+                    <input type="password" class="pin_put" maxlength="1">
+                </div>
+                <!-- Reset Pins Button -->
+                <button class="reset_button" id="reset_button">Reset Pin</button>
             </div>
+
+            <!-- Match Confirmation -->
+             <div id="match_confirm"></div>
 
 
             <!-- Submit Button -->

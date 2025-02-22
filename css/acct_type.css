@@ -297,31 +297,41 @@ form {
     /* margin-top: 1em; */
 }
 
-/* Name entries */
-.registration_names {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
-}
-
-/* Name Inputs */
 label {
     opacity: 100%;
     font-size: small;
 }
 
-input {
-    background-color: var(--input-background);
-    padding: 1.3em;
-    border: none;
-    font-size: small;
+
+/* The Account Type Buttons Div */
+.acct_types {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
 }
 
-::placeholder {
-    color: white;
-    opacity: 25%;
+.acct_button {
+    width: 100%;
+    background-color: var(--input-background);
+    border: none;
+    padding: 1.5em;
+    color: var(--text-color);
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Reset Pins Button */
+#reset_button {
+    background: none;
+    color: var(--menu-text-color);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: small;
+    /* font-weight: bold; */
 }
 
 /* Submit Button */
@@ -333,7 +343,7 @@ input {
     font-weight: bold;
     cursor: pointer;
     width: 100%;
-    margin-top: 5em;
+    /* margin-top: 1em; */
 }
 
 /* Landscape Query */
@@ -341,12 +351,7 @@ input {
     form {
         width: 40%;
     }
-
-    /* .submit {
-        margin-top: 1em;
-    } */
 }
-
 
 /* Desktop Query */
 @media screen and (min-width: 1200px) {

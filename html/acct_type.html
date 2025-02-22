@@ -6,7 +6,7 @@
     <title>Time Card</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/registration.css">
+    <link rel="stylesheet" href="../css/acct_type.css">
 </head>
 <body>
 
@@ -63,18 +63,30 @@
                 </div>
             </header>
 
-            <label>Let's start with your Name:</label>
+            <label>Let's choose your account type:</label>
 
             <!-- Select Dropdown -->
-            <div class="registration_names">
-                <!-- <label>First Name:</label> -->
-                <input type="text" id="firstname" placeholder="First Name:">
+            <div class="acct_types">
+
+                <!-- Each button -->
+                <button class="acct_button" value="manager" id="manager">
+                    <p>Manager</p>
+                </button>
+
+                <button class="acct_button" value="zamboni" id="zamboni_driver">
+                    <p>Zamboni Driver</p>
+                </button>
+
+                <button class="acct_button" value="instructor" id="skate_instructor">
+                    <p>Skate Instructor</p>
+                </button>
+
+                <button class="acct_button" value="guard" id="skate_guard">
+                    <p>Skate Guard</p>
+                </button>
+
             </div>
 
-            <div class="registration_names">
-                <!-- <label>Last Name:</label> -->
-                <input type="text" id="lastname" placeholder="Last Name:">
-            </div>
 
 
             <!-- Submit Button -->

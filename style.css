@@ -49,6 +49,8 @@ body.dark-mode {
 
      /* Input Colors */
      --input-background: #101316;
+     --input-background: #1b2025;
+     --input-background: #15191d;
      
      /* Button Colors */
      --button-background: #009DF8;
@@ -86,7 +88,7 @@ body {
     padding: 1rem;
     background-color: var(--background-color);
     width: 90%;
-    /* width: 100%; */
+    width: 85%;
 
     /* Puts Box shadow on the bottom */
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
@@ -376,7 +378,7 @@ label {
     background-color: var(--button-background);
     color: white;
     border: none;
-    padding: 1em;
+    padding: 1.5em;
     font-weight: bold;
     cursor: pointer;
 }
@@ -402,5 +404,16 @@ footer {
     margin-top: 2em;
 }
 
+/* Landscape Query */
+@media screen and (min-width: 700px) {
+    form {
+        width: 40%;
+    }
+}
 
 /* Desktop Query */
+@media screen and (min-width: 1200px) {
+    form {
+        width: 25%;
+    }
+}
