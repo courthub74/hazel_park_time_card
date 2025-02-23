@@ -61,6 +61,9 @@ body.dark-mode {
 
 
 /* WHOLE BODY */
+* {
+    font-family: 'Poppins';
+}
 
 /* Body for All */
 body {

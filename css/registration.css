@@ -58,9 +58,10 @@ body.dark-mode {
      --button-text: white;
 }
 
-/* * {
-    border-radius: 5px;
-} */
+
+* {
+    font-family: 'Poppins';
+}
 
 /* WHOLE BODY */
 
