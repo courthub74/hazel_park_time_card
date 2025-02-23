@@ -249,6 +249,7 @@ main {
     padding: 0 2em 0 2em;
     margin-top: 1em;
     width: 100%;
+    width: 84%;
 }
 
 header {
@@ -298,7 +299,7 @@ form {
     width: 75%;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 1em;
     /* margin-top: 1em; */
 }
 
@@ -315,6 +316,7 @@ form {
 label {
     opacity: 100%;
     font-size: small;
+    margin-top: 2em;
 }
 
 input {
@@ -322,6 +324,8 @@ input {
     padding: 1.3em;
     border: none;
     font-size: small;
+    outline: none;
+    color: var(--text-color);
 }
 
 ::placeholder {
