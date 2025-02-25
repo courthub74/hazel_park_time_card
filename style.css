@@ -435,7 +435,10 @@ footer {
 @media screen and (min-width: 1200px) {
     .container {
         width: 100%;
+        max-width: 1000px;
     }
+
+    /* Give the form a max width */
 
     .logo_name p {
         font-size: 2.5rem;
