@@ -248,6 +248,7 @@ main {
     padding: 0 2em 0 2em;
     margin-top: 1em;
     width: 100%;
+    width: 80%;
 }
 
 header {
@@ -317,6 +318,7 @@ label {
     display: flex;
     gap: 1.7em;
     gap: 1.1em;
+    gap: .6em;
     width: 100%;
 }
 
@@ -327,8 +329,10 @@ label {
     color: var(--text-color);
     text-align: center;
     width: 4em;
-    width: 4.5em;
+    /* width: 4.5em; */
     height: 4em;
+    /* width: 3em;
+    height: 3em; */
 }
 
 /* Reset Pins Button */

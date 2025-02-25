@@ -63,13 +63,17 @@ body.dark-mode {
 /* WHOLE BODY */
 * {
     font-family: 'Poppins';
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
 /* Body for All */
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100vh;
     background-color: var(--background-color);
     color: var(--text-color);
     overflow-x: hidden;
@@ -78,6 +82,15 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
+}
+
+/* Container for all */
+.container {
+    width: 100%; 
+    max-width: 400px; 
+    /* max-width: 150em; */
+    /* padding: 10em; */
+    /* border: 3px solid var(--button-background); */
 }
 
 /* Navbar */
@@ -92,6 +105,7 @@ body {
     /* width: 90%; */
     /* width: 85%; */
     width: 80%;
+    width: 100%;
 
     /* Puts Box shadow on the bottom */
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
@@ -244,18 +258,17 @@ main {
     /* justify-content: center; */
     align-items: center;
     gap: 1em; 
-    /* border: 1px solid lightblue; */
     height: 100vh;
-    padding: 0 2em 0 2em;
-    margin-top: 1em;
+    margin-top: 3em;
     width: 100%;
-    width: 80%;
+    /* width: 80%; */
 }
 
 header {
     display: flex;
     flex-direction: column;
     justify-content: left;
+    gap: 2em;
     width: 100%;
 }
 
@@ -300,7 +313,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 3em;
-    gap: 1em;
+    gap: 2em;
     /* margin-top: 1em; */
 }
 
@@ -316,10 +329,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: .5em;
-    /* padding: 1em;
-    background-color: var(--input-background);
-    color: var(--menu-text-color);
-    border: none; */
+    margin-top: 1em;
 }
 
 #users_dropdown {
@@ -416,15 +426,15 @@ footer {
 
 /* Landscape Query */
 @media screen and (min-width: 700px) {
-    form {
-        width: 40%;
+    .container {
+        width: 100%;
     }
 }
 
 /* Desktop Query */
 @media screen and (min-width: 1200px) {
-    form {
-        width: 25%;
+    .container {
+        width: 100%;
     }
 
     .logo_name p {
