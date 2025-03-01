@@ -70,17 +70,13 @@ body.dark-mode {
 
 /* Body for All */
 body {
-    margin: 0;
-    padding: 0;
     /* height: 100vh; */
     min-height: 100vh;
     background-color: var(--background-color);
     color: var(--text-color);
     overflow-x: hidden;
-    font-family: 'Poppins';
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
 }
 
@@ -97,14 +93,9 @@ body {
 .main_nav {
     display: flex;
     justify-content: space-between;
-    /* justify-content: center;
-    gap: 17em; */
     align-items: center;
     padding: 1rem;
     background-color: var(--background-color);
-    /* width: 90%; */
-    /* width: 85%; */
-    width: 80%;
     width: 100%;
 
     /* Puts Box shadow on the bottom */
@@ -261,7 +252,6 @@ main {
     height: 100vh;
     margin-top: 3em;
     width: 100%;
-    /* width: 80%; */
 }
 
 header {
@@ -312,10 +302,11 @@ form {
     /* width: 75%; */
     display: flex;
     flex-direction: column;
-    gap: 3em;
-    gap: 2em;
+    /* gap: 3em; */
+    /* gap: 2em; */
+    gap: 1em;
     /* margin-top: 1em; */
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 

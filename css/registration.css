@@ -69,7 +69,8 @@ body.dark-mode {
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100vh;
     background-color: var(--background-color);
     color: var(--text-color);
     overflow-x: hidden;
@@ -78,6 +79,15 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
+}
+
+/* Container for all */
+.container {
+    width: 100%; 
+    max-width: 400px; 
+    /* max-width: 150em; */
+    /* padding: 10em; */
+    /* border: 3px solid var(--button-background); */
 }
 
 /* Navbar */
@@ -91,7 +101,7 @@ body {
     background-color: var(--background-color);
     /* width: 90%;
     width: 85%; */
-    width: 80%;
+    width: 100%;
 
     /* Puts Box shadow on the bottom */
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
@@ -249,7 +259,7 @@ main {
     padding: 0 2em 0 2em;
     margin-top: 1em;
     width: 100%;
-    width: 84%;
+    /* width: 84%; */
 }
 
 header {
@@ -295,8 +305,8 @@ header {
 
 /* *** FORM *** */
 form {
-    /* width: 80%; */
-    width: 75%;
+    width: 80%;
+    /* width: 75%; */
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -359,8 +369,14 @@ input {
 
 /* Desktop Query */
 @media screen and (min-width: 1200px) {
+    .container {
+        width: 100%;
+        max-width: 2000px;
+    }
+
     form {
-        width: 25%;
+        width: 100%;
+        max-width: 350px;
     }
 
     .logo_name p {

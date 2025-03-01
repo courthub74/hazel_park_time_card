@@ -20,6 +20,8 @@
 
 \*Add Names registered to Name dropdown at login (read from database)
 
+\*Compare the pin number to the pin number in the database
+
 ### Registration Page
 
 \*~Pin Code Match JavaScript~
